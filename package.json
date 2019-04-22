@@ -1,0 +1,14 @@
+{
+  "name": "studentapplication",
+  "version": "1.0.0",
+  "description": "Simple Student details display and search application created using AngularJS, Firebase",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mugdha Bhagwat",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}

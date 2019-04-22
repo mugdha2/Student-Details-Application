@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html lang="en" ng-app="myApp">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Student Details Application</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <style>
+    body {
+      padding-top: 100px;
+    }
+  </style>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Student Details Application (AngularJS and Firebase)</a>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#!/page1">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#!/page2">Add Student</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- <br> -->
+<!-- 
+  <h1> Angular Starter template </h1> -->
+  <!-- inject templates here-->
+  <ng-view> </ng-view>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angularfire/dist/angularfire.js"></script>
+  <script src="bower_components/firebase/firebase.js"></script>
+  <script src="app.js"></script>
+  <script src="page1/page1.js"></script>
+  <script src="page2/page2.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyA67IcJxS4NipCOPHSkPiugz_uW1EyKrb8",
+      authDomain: "student-details-application.firebaseapp.com",
+      databaseURL: "https://student-details-application.firebaseio.com",
+      projectId: "student-details-application",
+      storageBucket: "student-details-application.appspot.com",
+      messagingSenderId: "1001286428692"
+    };
+    firebase.initializeApp(config);
+  </script>
+</body>
+
+</html>
